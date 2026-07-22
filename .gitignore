@@ -1,0 +1,26 @@
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Caches Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Build
+build/
+dist/
+
+# Spark
+metastore_db/
+derby.log
+spark-warehouse/
+
+# Sistema / editor
+.DS_Store
+.idea/
+.vscode/
