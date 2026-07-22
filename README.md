@@ -65,8 +65,8 @@ from causal.quality import check_balance, check_parallel_trends
 from causal.methods import run_ab
 
 spec = CausalSpec(
-    df=eventos, id_col="restaurant_id", date_col="dt",
-    metric=MetricSpec("gmv", "orders", name="ticket"),
+    df=eventos, id_col="customer_id", date_col="dt",
+    metric=MetricSpec("gmv", "sales", name="ticket"),
     test_start_date="2026-06-01", treatment_col="group", covariates=["gmv"],
 )
 
